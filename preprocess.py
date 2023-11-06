@@ -3,7 +3,6 @@ import datasets as ds
 from functools import partial
 from check_gpu_memory import print_gpu_memory
 from model import load_model
-import json
 import os
 
 def make_HFdataset(data_path):
@@ -60,11 +59,11 @@ if __name__ == '__main__':
     _, tokenizer = load_model(model_name)
     
     # data_chunk_size = get_max_length(model) # Llama2 4096 -> 다른 길이를 원한다면 직접 지정
-    data_chunk_size = 1024
+    data_chunk_size = 4096
     dataset = preprocess_dataset(tokenizer, data_chunk_size, raw_dataset)
 
     # 허깅페이스 업로드
-    dataset.push_to_hub("leeseeun/tokenzied_news_2gb_data")
+    dataset.push_to_hub("leeseeun/tokenized_news_2gb_4096")
 
     
 
