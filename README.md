@@ -1,7 +1,7 @@
 # Pre-training Llama2-7b from Scratch 
 
-## Requirements
-아래의 패키지를 `pip install`를 이용해서 설치한다.
+## 🛝 Requirements
+아래의 패키지를 `pip install`를 이용해서 설치합니다.
 
     deepspeed
     transformers
@@ -10,7 +10,7 @@
     nvidia-ml-py3
     jsonlines
 
-`mpi4py`는 `sudo apt install` 커맨드를 사용한다.
+`mpi4py`는 `sudo apt install` 커맨드를 사용합니다.
 
     sudo apt install python3-mpi4py
 
