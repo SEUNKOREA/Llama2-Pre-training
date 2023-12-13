@@ -13,7 +13,7 @@ def load_model(model_name):
         return_unused_kwargs=True,
         max_position_embeddings=4096,
         use_cache=False,
-        token="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"
+        # token={YOUR HUGGINGFACE TOKEN}
         # config = LlamaConfig(
         #     max_position_embeddings=4096,
         #     rms_norm_eps=1e-05,
